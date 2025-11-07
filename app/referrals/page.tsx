@@ -4,14 +4,14 @@ import Referrals from "../components/Referrals";
 export default function OurReferrals() {
   return (
     <>
-      <section>
+      <section className="px-8 ">
         <Referrals />
       </section>
-      <section className="max-w-screen-lg mx-auto">
+      <section className="px-8 max-w-screen-lg mx-auto">
         {/* SEÇÃO DE VÍDEOS (NOVA) */}
-        <h2 className="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+        <h2 className="sm:text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
           <BsYoutube className="text-primary-accent" />
-          Vídeos Recomendados -
+          Vídeos Recomendados
           <a
             target="_blank"
             className="text-blue-600"
