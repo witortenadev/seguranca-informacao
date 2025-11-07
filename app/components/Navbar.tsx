@@ -66,6 +66,7 @@ export default function Navbar() {
     { name: "Sobre o Curso", href: "/" },
     { name: "Segurança", href: "/computer-security" },
     { name: "Textos e Referências", href: "/texts-referrals" },
+    { name: "Nossas Referências", href: "/referrals" },
   ];
 
   return (
@@ -83,7 +84,7 @@ export default function Navbar() {
             </a>
           </div>
           {/* Links do Menu Desktop (escondido em mobile) */}
-          <div className="hidden sm:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -95,7 +96,7 @@ export default function Navbar() {
             ))}
           </div>
           {/* Botão do Menu Mobile (apenas em mobile) */}
-          <div className="sm:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={toggleMobileMenu}
               type="button"
@@ -116,7 +117,7 @@ export default function Navbar() {
 
       {/* Menu Mobile Dropdown (condicional) */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden shadow-lg" id="mobile-menu">
+        <div className="md:hidden shadow-lg" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-secondary-background">
             {navLinks.map((link) => (
               <a

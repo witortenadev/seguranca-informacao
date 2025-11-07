@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "@/app/components/Text";
 import { BiLeftArrow } from "react-icons/bi";
 import {
   BsShieldCheck,

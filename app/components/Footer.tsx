@@ -109,6 +109,14 @@ export default function Footer() {
                     Textos e Referências
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/referrals"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                  >
+                    Nossas Referências
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
